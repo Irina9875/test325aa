@@ -1,0 +1,758 @@
+@font-face {
+    font-family:'Unbounded' ;
+    src: url(../fonts/Unbounded-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family:'Unbounded' ;
+    src: url(../fonts/Unbounded-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family:'Unbounded' ;
+    src: url(../fonts/Unbounded-Regular.ttf);
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Unbounded' ;
+    transition: 0.7s
+    
+}
+
+.content{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header{
+    padding: 70px 70px;
+    height: 100%;
+}
+#burger, [for=burger] {
+    display: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.list__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+.list__header a{
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+}
+/* end header */
+
+/* start banner */
+.banner{
+    background-image: url(../img/glavnai/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+
+}
+.info__banner h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    padding-top: 26%;
+    padding-right: 15%;
+
+
+
+}
+.info__banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* .info__banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+/* konez banner */
+
+/* start katalog */
+
+.katalog__banner{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 100px;
+    text-align: center;
+}
+.img__katakog__banner p{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 8px;
+}
+.img__katakog__banner h3{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 8px 0 0;
+}
+/* konez katalog */
+
+/* start kategoria */
+.img__kategoria{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 135px;
+}
+/* start footer */
+.footer__contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+}
+.list__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.logo__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.foooter__kontct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.logo{
+   width: 290px;
+   height: 50px;
+}
+.list__footer a{
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+}
+.foooter__kontct a,p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+.otvet_vopros_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.butoon_footer{
+    border: 1px solid rgba(51, 51, 51, 0.48);
+    padding: 20px 100px;
+}
+.butoon_footer a{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.6);
+}
+.kat{
+    background-color: black;
+    height: 1px;
+}
+.kat1{
+    background-color: black;
+    height: 1px;
+    width: 230px;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.galka{
+    display: flex;
+    flex-direction: row;
+}
+input{
+   padding: 3px 3px 5px 70px;
+   text-align: endas;
+}
+
+
+/* KATALOG START */
+.karto_katalog_vse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.info__katalog_kart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item { 
+    width: 35px; 
+    height: 35px; 
+    color: #283618; 
+    text-align: center; 
+    font-weight: 300;
+    font-size: 20px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid #333333;
+} 
+ 
+.number-block { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 24px; 
+    padding-bottom: 60px; 
+} 
+ 
+.item1 { 
+    border: 1px solid #333333;
+    width: 35px; 
+    height: 35px; 
+    background: #283618; 
+    color: #FFF; 
+    text-align: center; 
+    font-weight: 300;
+    font-size: 20px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+.item:hover { 
+    background-color: #283618; 
+    color: #ffffff; 
+    border-radius: 3px; 
+    transition: .7s; 
+}
+.pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+}
+
+
+.kartocha_foto_neck{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.neskolko_kart{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.kartochla_odna{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.razmer_kart{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-top: 20px;
+}
+.razmer_kart a{
+    border: 1px solid #333333;
+    padding: 7px 22px;
+    background-color: #333333;
+    border-radius: 10px;
+    color: #FFF;
+}
+.razmer_kart a:hover{
+    border: 1px solid #333333;
+    padding: 7px 22px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #333333;
+}
+.prise_kart{
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.prise_kart p {
+    font-weight: 700;
+    font-size: 40px;
+}
+.prise_kart h6 {
+    font-weight: 500;
+    font-size: 14px;
+    color: red;
+}
+.info__kart_katalog h5{
+  font-size: 15px;
+  font-weight: 300;
+}
+.btn_knopka{
+    width: 352px;
+    height: 60px;
+    background-color:#333333 ;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+.btn_knopka a{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+}
+.otzivi_vse{
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.odin_otzv{
+    border: 1px solid #33333352;
+    padding: 50px 30px;
+}
+.name_otzv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.otz{
+    font-weight: 300;
+    font-size: 22px;
+    text-align: start;
+    padding-bottom: 35px;
+}
+.odin_otzv h5{
+    font-weight: 300;
+    font-size: 15px;
+}
+.name_otzv p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.prise_kart{
+    padding: 30px 0;
+}
+.info__kart_katalog h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.btn_knopka{
+    margin: 40px 0;
+}
+.info_opisanie h5{
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.info_opisanie p{
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 17px;
+}
+.info_opisanie h6{
+    font-weight: 300;
+    font-size: 11px;
+
+}
+.pagina{
+    padding: 50px 0;
+}
+.burg{
+    display: none;
+}
+.text_razmer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 120px;
+}
+.korzina_kart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kart_korzina{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 120px;
+    padding-top: 25px;
+
+}
+.text_razmer h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+.pervai_kart{
+    padding-top: 30px;
+}
+.pervai_kart p{
+    font-weight: 700;
+    font-size: 25px;
+}
+.text_razmer p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.korxina_btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #333333;
+}
+.korxina_btn a:hover{
+    color: #333333;
+}
+.korxina_btn{
+    width: 513px;
+    height: 87px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.korxina_btn a{
+    color: #fff3f3;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 418px){
+    .list__header{
+        display: none;
+    }
+    header{
+        padding: 30px;
+    }
+    .burg{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+    .content{
+        margin: 0 10px;
+    }
+    .fa-solid.fa-bars{
+        display: block;
+    }
+    .list__header{
+        display: none;
+    }
+    .icon__header{
+        display: none;
+    }
+    .banner{
+        height: 40vh;
+        padding-top: 5%;
+    }
+    .logo__header img{
+        height: 25px;
+        width:96px ;
+    }
+    .info__banner h1{
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .none{
+        display: none;
+    }
+    /* .katalog__banner{
+        width: 165px;
+        height: 286px;
+        padding-top: 20px;
+    } */
+    .img__katakog__banner img{
+        width: 145px;
+        height: 197px;
+    }
+    .img__katakog__banner p{
+        font-size: 12px;
+    }
+    .img__kategoria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img__kategoria img{
+        width: 245px;
+        height: 297px;
+    }
+    .footer__contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .list__footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .list__footer a {
+        font-size: 12px;
+    }
+    .logo__footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo__footer img{
+        height: 25px;
+        width:96px ;
+    }
+    .icon__footer img{
+        width: 70px;
+        height: 30px;
+    }
+    .foooter__kontct{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+     .foooter__kontct a,p{
+font-size: 10px;
+     }
+     .otvet_vopros_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding-top: 30px;
+     }
+  .otvet_vopros_footer p{
+    font-size: 12px;
+  }
+   .butoon_footer a{
+    width: 248px;
+    height: 42px;
+   }
+   .butoon_footer a{
+    font-size: 13px;
+   }
+   .otvet_vopros_footer p{
+    font-size: 10px;
+  }
+  .katalog_kart none{
+    display: none;
+  }
+  .katalog_kart img{
+    width: 147px;
+    height: 180px;
+  }
+  .price{
+    display: none;
+  }
+  .galka{
+    display: none;
+  }
+  .info_katalog_ht img{
+    width: 17px;
+    height: 17px;
+  }
+  .info_katalog_nazv h4{
+     font-size: 12px;
+  }
+   .item{
+    width: 20px;
+    height: 20px;
+    font-size:10px ;
+  }
+   .item1{
+    width: 20px;
+    height: 20px;
+    font-size:10px ;
+  }
+  .number-block{
+    padding-top: 20px;
+  }
+ .info__katalog_kart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ .karto_katalog_vse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    padding-top: 50px;
+ }
+ .kartochla_odna{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .neskolko_kart img {
+    width:87px ;
+    height:103px;
+ }
+ .adaptiv_foto{
+    width: 235px;
+    height: 367px;
+ }
+ .none_foto {
+    display: none;
+ }
+ .neskolko_kart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+ }
+ .razmer_kart  {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+ }
+ .odin_otzv none{
+    display: none;
+ }
+ .pagina content none{
+    display: none;
+ }
+ .odin_otzv h5{
+    font-size: 11px;
+ }
+  .name_otzv p{
+    font-size: 14px;
+  }
+  .name_otzv img{
+    width: 111px;
+    height: 15px;
+  }
+  [for=burger]{
+    display: block;
+    position: fixed;
+    right: 80px;
+    top: 20px;
+}
+[for=burger]::before {
+    content: '≡';
+    font-size: 25px;
+}
+nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    background: rgba(255, 0, 0, 0.262);
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+#burger:checked + [for=burger] + nav{
+    display: block;
+}
+#burger:checked + [for=burger]::before{
+    content: 'x';
+    font-size: 20px;
+}
+.korzina_kart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kart_korzina{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 120px;
+    padding-top: 25px;
+
+}
+.text_razmer h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+.pervai_kart{
+    padding-top: 30px;
+}
+.pervai_kart p{
+    font-weight: 700;
+    font-size: 25px;
+}
+.text_razmer p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.korxina_btn{
+    width: 513px;
+    height: 87px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.korxina_btn a{
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 500;
+}
+.pervai_kart img{
+    width: 381px;
+    height: 508px;
+}
+.kart_korzina img{
+    width: 60px;
+    height: 48px;
+}
+}
